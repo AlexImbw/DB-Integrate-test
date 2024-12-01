@@ -4,12 +4,12 @@ body {
     justify-content: center;
     height: 100vh;  /* Garante que o body ocupe toda a altura da tela */
     margin: 0;  /* Remove a margem padrão */
-    background-color: darkgrey;
+    background-color: rgb(228, 156, 156);
 }
 
 div#div-login {
     padding: 10%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 20px 1px;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;

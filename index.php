@@ -8,9 +8,11 @@
 </head>
 <body>
     <div id="div-login">
+
         <section id="area-login">
-            <h1>Login</h1>
+            <h1>Cadastro</h1>
         </section>
+
         <form action="cria_usuario.php" method="post">
 
             <input type="text" name="nome" class="dados" placeholder="Nome">
@@ -24,12 +26,9 @@
             <br>
             <hr>
         
-            <input type="submit" value="Entrar" id="entrar">
-
-            <br><br>
-
-            <a href="">Esqueci a minha senha!</a>
+            <input type="submit" value="Cadastrar" id="entrar">
+        </form>
     </div>
-    </form>
+    
 </body>
 </html>
