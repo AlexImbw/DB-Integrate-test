@@ -4,7 +4,7 @@ body {
     justify-content: center;
     height: 100vh;  /* Garante que o body ocupe toda a altura da tela */
     margin: 0;  /* Remove a margem padrão */
-    background-color: rgb(228, 156, 156);
+    background-color: rgb(39, 32, 32);
 }
 
 div#div-login {
@@ -24,7 +24,6 @@ input#entrar {
 
 input.dados {
     width: 12rem;
-    height: 1.5rem;
-
+    height: 1.5rem
 }
 
