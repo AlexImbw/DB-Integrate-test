@@ -1,0 +1,29 @@
+<?php
+//PUXA OS DADOS DO ARQUIVO DE CONEXÃO (CONNECTOR.PHP)
+require("connector.php");
+
+if(isset($_POST)) {
+    $nome = $_POST ['nome'];
+    $passw = $_POST ['passw'];
+
+    $query = "INSERT INTO usuario (nome, senha) VALUES ('$nome', '$passw')";
+
+        //stmt SERVE PARA APRIMORAR A SEGURANÇA E EVITAR SQL INJECTION E OUTRAS COISAS QUE PODEM ACONTECER DURANTE O PROCESSO DE LOGIN. 
+
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+
+
+    //RETORNA PARA A TELA DE LOGIN PARA EVITAR DUPLICIDADE. A FRASE DEPOIS DA INTERROGAÇÃO É ENVIADA PARA A URL PARA MOSTRAR QUE O CONTEÚDO DO FORMULÁRIO FOI ENVIADO.
+    header("Location: index.php?criado=sucesso");
+
+    //echo"CADASTRO REALIZADO COM SUCESSO!";
+
+        //SERVE PARA TESTAR SE AS INFOMAÇÕES ESTÃO SENDO ENVIADAS. NÃO FAZ NENHUM TIPO DE REGISTRO NO BANCO DE DADOS, APENAS VALIDA QUE OS CAMPOS ESTÃO CORRESPONDENTES AO QUE ESTÁ SENDO PREPARADO NO FORMULÁRIO. 
+
+        //echo"<pre>";
+        //print_r($_POST);
+        //echo"</pre>";
+
+        //A TAG <pre> APENAS FORMATA O CONTEÚDO E COLOCA O NOME DOS CAMPOS DA FRENTE DOS DADOS PARA FACILITAR A VISUALIZAÇÃO.
+}
