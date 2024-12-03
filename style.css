@@ -17,8 +17,8 @@ div#div-login {
     border-radius: 2%;
 }
 
-input#entrar {
-    width: 6rem;
+input.entrar {
+    width: 10rem;
     height: 2rem;
 }
 
